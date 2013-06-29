@@ -1607,12 +1607,6 @@ static void do_sdc1_reset(void)
    	mdelay(1);
 	*sdc1_clk &= ~(1 << 9);
 }
-
-static struct msm_pm_boot_platform_data msm_pm_boot_pdata __initdata = {
-	.mode = MSM_PM_BOOT_CONFIG_RESET_VECTOR_VIRT,
-	.v_addr = (unsigned int *)PAGE_OFFSET,
-};
-
 ///////////////////////////////////////////////////////////////////////
 // I2C
 ///////////////////////////////////////////////////////////////////////
